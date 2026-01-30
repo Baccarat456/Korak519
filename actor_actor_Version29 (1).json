@@ -1,0 +1,17 @@
+{
+  "actorSpecification": 1,
+  "name": "Substack Newsletter Directory scraper",
+  "title": "Substack Newsletter Directory scraper",
+  "description": "Crawl Substack discovery pages and newsletter pages to extract metadata (title, author, description, topics, rss, url) for building a directory.",
+  "version": "0.0",
+  "meta": {
+    "templateId": "ai-generated-actor",
+    "generatedBy": "Gpt-4o-mini"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Input schema of the Substack Newsletter Directory scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "Seed URLs to start crawling from (Substack discover pages, tag pages, or specific newsletter pages).",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://substack.com/discover"
+        }
+      ]
+    },
+    "maxRequestsPerCrawl": {
+      "title": "Max Requests per Crawl",
+      "type": "integer",
+      "description": "Maximum number of requests the crawler will perform.",
+      "default": 500
+    },
+    "useBrowser": {
+      "title": "Use Playwright (for client-side pages)",
+      "type": "boolean",
+      "description": "If true, use a browser crawler to render JS-heavy Substack pages.",
+      "default": false
+    },
+    "followInternalOnly": {
+      "title": "Follow internal links only",
+      "type": "boolean",
+      "description": "If true, only follow links within the same host as each start URL.",
+      "default": true
+    }
+  }
+}

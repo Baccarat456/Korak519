@@ -1,0 +1,22 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": ["title", "author", "topics", "rss", "substack_url"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "title": { "label": "Newsletter title", "format": "text" },
+          "author": { "label": "Author / Publisher", "format": "text" },
+          "topics": { "label": "Topics / Tags", "format": "text" },
+          "rss": { "label": "RSS feed", "format": "link" },
+          "substack_url": { "label": "Substack page", "format": "link" }
+        }
+      }
+    }
+  }
+}
